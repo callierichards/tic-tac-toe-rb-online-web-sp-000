@@ -53,7 +53,8 @@ def current_player(board)
   index = input_to_index(user_input)
   if valid_move?(board, index)
     move(board, index, current_player(board))
-    puts "Please enter a valid move!"
+    else
+      puts "Please enter a valid move!"
   end
   display_board(board)
 end
