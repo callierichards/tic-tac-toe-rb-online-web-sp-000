@@ -55,7 +55,8 @@ def current_player(board)
     move(board, index, current_player(board))
     else
       puts "Please enter a valid move!"
-  end
+      user_input = gets.strip
+    end
   display_board(board)
 end
 
